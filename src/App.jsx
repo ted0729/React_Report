@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import AddButton from './components/Addbutton';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -65,7 +66,7 @@ function App() {
         내용주세요 &nbsp;<input
           value={content}
           onChange={contentChangeHandler} />
-        <button className="addButton" onClick={addButtonClickHandler}>추가하기</button>
+        <AddButton onClickHandler={addButtonClickHandler} />
       </div>
       <div><h2>Working now..🚗</h2></div>
       <div className="todoList">
