@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+	font-family: "Yeongdeok_Snow_Crab";
+  font-weight: normal;
+	src: url(./fonts/Yeongdeok_Snow_Crab.ttf);
+}
+ body {
+  font-family: "Yeongdeok_Snow_Crab";
+ }

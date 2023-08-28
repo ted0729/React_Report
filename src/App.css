@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.main-layout {
+    max-width: 800px;
+    min-width: 800px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-header {
+    padding: 10px;
+    background-color: #d1dfd7;
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-header-name {
+    margin-right: auto;
+    /* 왼쪽 정렬 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-header-title {
+    margin-left: auto;
+    /* 오른쪽 정렬 */
 }
 
-.App-link {
-  color: #61dafb;
+.addTodoList {
+    padding: 24px;
+    background-color: rgb(188, 208, 201);
+    display: flex;
+    font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addButton {
+    font-family: 'Yeongdeok_Snow_Crab', sans-serif;
+    margin-left: auto;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: aliceblue;
+}
+
+.todoList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todoItem {
+    width: 200px;
+    height: 150px;
+    border: 4px solid #adb1ae;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.completeButton {
+    font-family: 'Yeongdeok_Snow_Crab', sans-serif;
+    background-color: white;;
+    border-color: #bac6bf;
+    border-radius: 5px;
+    font-size: 1-px;
+    padding: 3px 20px;
+}
+
+.deleteButton {
+    font-family: 'Yeongdeok_Snow_Crab', sans-serif;
+    background-color: white;
+    border-color: rgb(208, 62, 62);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 20px;
 }
