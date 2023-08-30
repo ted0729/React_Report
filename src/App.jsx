@@ -20,7 +20,7 @@ function App() {
   const addButtonClickHandler = () => {
     if (title && content) {
       const newItem = {
-        id: todoList.length + 1,
+        id: Date.now(),
         title,
         content,
         complete: false,
